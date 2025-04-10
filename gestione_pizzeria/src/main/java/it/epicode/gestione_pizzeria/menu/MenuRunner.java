@@ -36,10 +36,11 @@ public class MenuRunner implements CommandLineRunner {
     private final Drink sprite;
 
 
-    public static void printMenu(List<RigaMenu> righe){
+    public static void printMenu(List<RigaMenu> righe) {
         for (RigaMenu riga : righe) {
-            System.out.println(riga.getNome() + " " + riga.getPrezzo() + " " + riga.getCalorie());
+            System.out.println(riga.descrizioneRiga());
         }
+
     }
 
     @Override
@@ -71,6 +72,6 @@ public class MenuRunner implements CommandLineRunner {
                 , fanta
                 , sprite
 
-        ))
+        ));
     }
 }
